@@ -38,7 +38,7 @@ let
 
     postPatch = ''
       substitute ${wrapperLibSource} lib.c \
-        --subst-var-by to "${src}/var/lib/fprint/fw"
+        --subst-var-by to "${src}/var/lib/fprint/fw/cv3"
       cc -fPIC -shared lib.c -o ${wrapperLibName}
     '';
 
